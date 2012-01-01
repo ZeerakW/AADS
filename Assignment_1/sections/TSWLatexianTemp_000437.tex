@@ -1,0 +1,77 @@
+\section{Rectilinear Planar Embedding}
+
+\subsection{Exercise 2.1}
+
+Table \ref{tab:Xvf} shows the values for {\(x_{vf}\)} that correspond to Figure 3 from the Assignment Document.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l | l l l l l}
+  \(x_{vf}\) & a & b & c & d  & e  \\
+  \hline
+  \(v_{1}\)  & 0 & 1 & 1 & 0  & 0  \\
+  \(v_{2}\)  & 0 & 0 & 1 & 1  & 0  \\
+  \(v_{3}\)  & 1 & 0 & 1 & 1  & 1  \\
+  \(v_{4}\)  & 0 & 0 & 0 & -1 & 1  \\
+  \(v_{5}\)  & 1 & 0 & 0 & 0  & -1 \\
+  \(v_{6}\)  & 1 & 1 & 0 & 1  & 1  \\
+  \(v_{7}\)  & 0 & 0 & 0 & 0  & 0
+  \end{tabular}
+  \caption{\(x_{vf}\) values for Figure 3 in Assignment Document}
+  \label{tab:Xvf}
+\end{table}
+
+
+Table \ref{tab:Zvf} shows the values for \(z_{fg}\) that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l|lllll}
+  \(z_{fg}\) & a & b & c & d & e \\\hline
+  a     & - & 0 & 0 & 0 & 0 \\
+  b     & 2 & - & 1 & 1 & 0 \\
+  c     & 1 & 1 & - & 0 & 0 \\
+  d     & 0 & 1 & 0 & - &   \\
+  e     & 4 & 0 & 0 & 0 & - \\
+  \end{tabular}
+  \caption{\(z_{fg}\) values for Figure 3 in Assignment Document}
+  \label{tab:Zvf}
+\end{table}
+
+We are asked to draw a rectilinear layout of graph 2(a) from the assignment description
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.07]{images/planar-drawing.png}
+  \caption{Rectilinear drawing of Graph 2(a) in assignment desc}
+  \label{fig:rectidraw}
+\end{figure}
+
+\subsection{Exercise 2.2}
+Let \(f_e\) be the external boundary cycle and \(B\) be the set of all boundaries. Inner turns (from \(x\) to \(y\)) are denoted by \(z_{xy}\) and outer turns (from \(y\) to \(x\)) are denoted by \(z{yx}\).
+\begin{align}
+  \forall f \in B \ f_e:&  \sum_{v} x_{vf_e} + \sum_{b\in B \ {f_e}} f_e - \ldots = -4\\
+                        & \sum_{v} x_{vf} + \sum_{b\in B \ {f_e}} f - \ldots = 4 
+\end{align}
+
+\subsection{Exercise 2.3}
+Since G is a graph that contains only straight and horizontal edges, it is impossible for G to have more than 4 edges: a horizontal edge going left; a horizontal edge going right; a vertical edge going up; a vertical edge going down. To show that Equation 1 from the Assignment Document holds we will show that it is true for each of the 3 cases presented, ie \(v\) has degree \(\in [2,3,4]\).
+
+Firstly, the sum of the angles for a vertex \(v\) must equal 360\(^\circ\). Secondly, as we only allow horizontal and vertical edges the only possible turn angles \(\in [90,180,270] \) for an \(x_{vf}\). We will use these fact to show that the conditions hold for each of the three cases presented.
+
+
+Case 1: \(v\) has degree 2.\newline
+Then there are exactly 2 boundary cycles that pass through \(v\), say \(h\) and \(g\). Then there are only two possible combinations of the inner and outer turns from the point of view from each boundary cycle. Either both are 180\(^\circ\), and therefore \( x_{vh} = 0 \) and  \( x_{vg} = 0 \). So \(\sum_f x_{vf} = 0 \). Or one boundary cycle has a turn of 90\(^\circ\) (an inner turn, \(x_{vf'} = 1\)) and the other a turn of 270\(^\circ\) (an outer turn,  \(x_{vf''} = -1\)), then \(\Sigma_f x_{vf} = 1 - 1 = 0 \)
+
+Case 2: \(v\) has degree 3.\newline
+Then there are exactly 3 boundary cycles that pass through \(v\), then since the angles around \(v\) must add to 360\(^\circ\) and we can only have horizontal or vertical edges then there must be one angle of 180\(^\circ\) and two 90\(^\circ\) turns, thus there can only be two inner turns and  \(\sum_f x_{vf} = 0 + 1+ 1= 2 \)
+
+
+Case 3: \(v\) has degree 4.\newline
+Then there are exactly 4 boundary cycles that pass through \(v\), as the angles around \(v\) must add to 360\(^\circ\),  we can only have four 90\(^\circ\) turns, thus there can only be four inner turns and  \(\sum_f x_{vf} = 1 +1 + 1+ 1= 4 \)
+
+
+
+\subsection{Exercise 2.5}
+Given a rectilinear graph \(G = (V,E)\) and a MCFP \(G' = (V',E')\). V'  is the set of vertices which contains all vertices \(v \in G\), and also a vertex for every face in \(G\).  \(E'\) is the set of edges which contains edges \((f,g)\) for f,g faces in \(G\) , if f and g share a vertex, and edges \((v,f)\) for \(v \in V\) if v was a vertex in f. As we are dealing with turns and breakpoints, and these are relative to faces and vertices and faces and faces, there is no information stored on connections from vertices to vertices in \(G\) and therefore these connections are not present in \(G'\). The \(z_{fg}\) variables 
+
+
+

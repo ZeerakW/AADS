@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}\textit {b}-flow}{3}{section.1}
+\contentsline {section}{\numberline {2}Rectilinear Planar Embedding}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Exercise 2.1}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Exercise 2.2}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Exercise 2.3}{5}{subsection.2.3}
