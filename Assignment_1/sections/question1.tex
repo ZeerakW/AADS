@@ -1,0 +1,14 @@
+\section{Exercise 1}
+\textit{Find for each of the two graphs in Figure \ref{fig:bflow}, a b-flow for the graph or argue that the graph has no b-flow}
+% \begin{figure}
+%   \centering
+%   \includegraphics{img/bflowgraph.png}
+%   \label{fig:bflow}
+% \end{figure}
+
+For a directed graph \(G=(V,E)\). For each vertex \(v \in V\) let \(\delta^+(v)\) be the set of outgiong edges from \(v\) and \(\delta^-(v)\) be the set of incoming edges to \(v\).\\
+Given is that each a \textit{b}-flow under the following constraints
+\begin{align}
+\sum_{e\in \delta^-(v)} x_e - \sum_{e\in \delta^+(v)} x_e =&\, b_v, \forall v \in V\\
+0 \leq x_e \leq&\, u_e, \forall e \in E
+\end{align}
