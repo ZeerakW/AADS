@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.1)  26 APR 2015 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.1)  26 APR 2015 18:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex
-(/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex
+**/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex
+(/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:1: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:1: Undefined control sequence.
 l.1 \section
             {Rectilinear Planar Embedding}
 The control sequence at the end of the top line
@@ -17,7 +17,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:1: LaTeX Error: Missing \begin{document}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:1: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -59,7 +59,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
 []
  []
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:3: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:3: Undefined control sequence.
 l.3 \subsection
                {2.1}
 The control sequence at the end of the top line
@@ -69,7 +69,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:3: LaTeX Error: Missing \begin{document}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:3: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -89,7 +89,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
  []
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:5: LaTeX Error: Missing \begin{document}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:5: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -105,7 +105,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:5: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:5: Undefined control sequence.
 <write> ...: Reference `tab:Xvf' on page \thepage 
                                                   \space undefined\on@line .
 l.5 Table \ref{tab:Xvf}
@@ -136,7 +136,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:5: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:5: Undefined control sequence.
 l.5 Table \ref{tab:Xvf} shows the values for {\it
                                                   x_{vf}} that correspond to Figure 3 from the Assignment Document.
 The control sequence at the end of the top line
@@ -146,7 +146,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no x in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:5: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:5: Missing $ inserted.
 <inserted text> 
                 $
 l.5 ... \ref{tab:Xvf} shows the values for {\it x_
@@ -158,7 +158,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 5.
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:5: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:5: Extra }, or forgotten $.
 l.5 ...{tab:Xvf} shows the values for {\it x_{vf}}
                                                    that correspond to Figure 3 from the Assignment Document.
 I've deleted a group-closing symbol because it seems to be
@@ -167,7 +167,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:6: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:6: Missing $ inserted.
 <inserted text> 
                 $
 l.6 
@@ -191,7 +191,7 @@ Overfull \hbox (264.11232pt too wide) in paragraph at lines 5--6
  []
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:7: LaTeX Error: Environment table undefined.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:7: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -204,7 +204,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:7: LaTeX Error: Missing \begin{document}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:7: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -219,7 +219,7 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no x in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:10: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:10: Missing $ inserted.
 <inserted text> 
                 $
 l.10 x_
@@ -227,7 +227,7 @@ l.10 x_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:10: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:10: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.10 x_{vf} &
@@ -238,7 +238,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:10: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:10: Missing $ inserted.
 <inserted text> 
                 $
 l.10 x_{vf} &
@@ -246,7 +246,7 @@ l.10 x_{vf} &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:10: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:10: Missing } inserted.
 <inserted text> 
                 }
 l.10 x_{vf} &
@@ -263,7 +263,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:12: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:12: Missing $ inserted.
 <inserted text> 
                 $
 l.12 v_
@@ -271,7 +271,7 @@ l.12 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:12: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:12: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.12 v_{1}  &
@@ -282,7 +282,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:12: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:12: Missing $ inserted.
 <inserted text> 
                 $
 l.12 v_{1}  &
@@ -290,7 +290,7 @@ l.12 v_{1}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:12: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:12: Missing } inserted.
 <inserted text> 
                 }
 l.12 v_{1}  &
@@ -307,7 +307,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:13: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:13: Missing $ inserted.
 <inserted text> 
                 $
 l.13 v_
@@ -315,7 +315,7 @@ l.13 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:13: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:13: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.13 v_{2}  &
@@ -326,7 +326,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:13: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:13: Missing $ inserted.
 <inserted text> 
                 $
 l.13 v_{2}  &
@@ -334,7 +334,7 @@ l.13 v_{2}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:13: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:13: Missing } inserted.
 <inserted text> 
                 }
 l.13 v_{2}  &
@@ -351,7 +351,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:14: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:14: Missing $ inserted.
 <inserted text> 
                 $
 l.14 v_
@@ -359,7 +359,7 @@ l.14 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:14: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:14: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.14 v_{3}  &
@@ -370,7 +370,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:14: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:14: Missing $ inserted.
 <inserted text> 
                 $
 l.14 v_{3}  &
@@ -378,7 +378,7 @@ l.14 v_{3}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:14: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:14: Missing } inserted.
 <inserted text> 
                 }
 l.14 v_{3}  &
@@ -395,7 +395,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:15: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:15: Missing $ inserted.
 <inserted text> 
                 $
 l.15 v_
@@ -403,7 +403,7 @@ l.15 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:15: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:15: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.15 v_{4}  &
@@ -414,7 +414,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:15: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:15: Missing $ inserted.
 <inserted text> 
                 $
 l.15 v_{4}  &
@@ -422,7 +422,7 @@ l.15 v_{4}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:15: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:15: Missing } inserted.
 <inserted text> 
                 }
 l.15 v_{4}  &
@@ -440,7 +440,7 @@ Missing character: There is no - in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:16: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:16: Missing $ inserted.
 <inserted text> 
                 $
 l.16 v_
@@ -448,7 +448,7 @@ l.16 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:16: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:16: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.16 v_{5}  &
@@ -459,7 +459,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:16: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:16: Missing $ inserted.
 <inserted text> 
                 $
 l.16 v_{5}  &
@@ -467,7 +467,7 @@ l.16 v_{5}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:16: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:16: Missing } inserted.
 <inserted text> 
                 }
 l.16 v_{5}  &
@@ -485,7 +485,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:17: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:17: Missing $ inserted.
 <inserted text> 
                 $
 l.17 v_
@@ -493,7 +493,7 @@ l.17 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:17: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:17: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.17 v_{6}  &
@@ -504,7 +504,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:17: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:17: Missing $ inserted.
 <inserted text> 
                 $
 l.17 v_{6}  &
@@ -512,7 +512,7 @@ l.17 v_{6}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:17: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:17: Missing } inserted.
 <inserted text> 
                 }
 l.17 v_{6}  &
@@ -529,7 +529,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no v in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:18: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:18: Missing $ inserted.
 <inserted text> 
                 $
 l.18 v_
@@ -537,7 +537,7 @@ l.18 v_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:18: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:18: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule width\arrayrulewidth \hskip -.5\arrayrulewidth \endtemplate 
 l.18 v_{7}  &
@@ -548,7 +548,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:18: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:18: Missing $ inserted.
 <inserted text> 
                 $
 l.18 v_{7}  &
@@ -556,7 +556,7 @@ l.18 v_{7}  &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:18: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:18: Missing } inserted.
 <inserted text> 
                 }
 l.18 v_{7}  &
@@ -573,7 +573,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:20: LaTeX Error: \caption outside float.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:20: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -584,7 +584,7 @@ l.20 \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:20: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:20: Undefined control sequence.
 l.20 \caption{{\it
                    x_{vf} values for Figure 3 in Assignment Document}
 The control sequence at the end of the top line
@@ -594,7 +594,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no x in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:20: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:20: Missing $ inserted.
 <inserted text> 
                 $
 l.20 \caption{{\it x_
@@ -602,7 +602,7 @@ l.20 \caption{{\it x_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:20: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:20: Extra }, or forgotten $.
 l.20 ...alues for Figure 3 in Assignment Document}
                                                   
 I've deleted a group-closing symbol because it seems to be
@@ -612,7 +612,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:22: LaTeX Error: \begin{document} ended by \end{table}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:22: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -624,7 +624,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:22: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:22: Missing $ inserted.
 <inserted text> 
                 $
 l.22 \end{table}
@@ -635,7 +635,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:22: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:22: Missing } inserted.
 <inserted text> 
                 }
 l.22 \end{table}
@@ -646,7 +646,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:22: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:22: Missing } inserted.
 <inserted text> 
                 }
 l.22 \end{table}
@@ -673,14 +673,14 @@ Overfull \hbox (200.8027pt too wide) in paragraph at lines 7--23
  []
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:25: LaTeX Error: Missing \begin{document}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:25: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.25 T
-      able \ref{tab:Zvf} shows the values for {\it {z_{fg}} that correspond to Figure 3 from the Assignment Document.
+      able \ref{tab:Zvf} shows the values for {\it {z_{fg}} that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -689,11 +689,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:25: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:25: Undefined control sequence.
 <write> ...: Reference `tab:Zvf' on page \thepage 
                                                   \space undefined\on@line .
 l.25 Table \ref{tab:Zvf}
-                         shows the values for {\it {z_{fg}} that correspond to Figure 3 from the Assignment Document.
+                         shows the values for {\it {z_{fg}} that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -720,9 +720,9 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:25: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:25: Undefined control sequence.
 l.25 Table \ref{tab:Zvf} shows the values for {\it
-                                                   {z_{fg}} that correspond to Figure 3 from the Assignment Document.
+                                                   {z_{fg}} that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -730,17 +730,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no z in font nullfont!
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:25: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:25: Missing $ inserted.
 <inserted text> 
                 $
 l.25 ...ref{tab:Zvf} shows the values for {\it {z_
-                                                  {fg}} that correspond to Figure 3 from the Assignment Document.
+                                                  {fg}} that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:25: Extra }, or forgotten $.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:25: Extra }, or forgotten $.
 l.25 ...ab:Zvf} shows the values for {\it {z_{fg}}
-                                                   that correspond to Figure 3 from the Assignment Document.
+                                                   that correspond to Figure 3 from the Assignment Document. There are 13 break-points in this graph.
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -748,7 +748,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:26: LaTeX Error: Environment table undefined.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:26: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -798,7 +798,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no - in font nullfont!
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:36: LaTeX Error: \caption outside float.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:36: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -809,7 +809,7 @@ l.36 \caption
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:36: Undefined control sequence.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:36: Undefined control sequence.
 l.36 \caption{{\it
                    z_{fg} values for Figure 3 in Assignment Document}
 The control sequence at the end of the top line
@@ -819,7 +819,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:38: LaTeX Error: \begin{document} ended by \end{table}.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:38: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -831,7 +831,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:38: Missing } inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:38: Missing } inserted.
 <inserted text> 
                 }
 l.38 \end{table}
@@ -842,7 +842,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000095.tex:39: Missing $ inserted.
+/Users/sarahmcgillion/AADS/Assignment_1/sections/TSWLatexianTemp_000097.tex:39: Missing $ inserted.
 <inserted text> 
                 $
 l.39 
@@ -861,13 +861,18 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--39
  []
 
 
-Overfull \hbox (480.68529pt too wide) in paragraph at lines 25--39
-[]\OML/cmm/m/it/10 thatcorrespondtoFigure\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 fromtheAssignmentDocument:\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 ][][]$ 
+Overfull \hbox (348.16309pt too wide) in paragraph at lines 25--39
+[]\OML/cmm/m/it/10 thatcorrespondtoFigure\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 fromtheAssignmentDocument:Thereare\OT1/cmr/m/n/10 13\OML/cmm/m/it/10 break \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (300.02342pt too wide) in paragraph at lines 25--39
+\OML/cmm/m/it/10 pointsinthisgraph:\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 ][][]$ 
  []
 
 )
 ! Emergency stop.
-<*> ...nment_1/sections/TSWLatexianTemp_000095.tex
+<*> ...nment_1/sections/TSWLatexianTemp_000097.tex
                                                   
 *** (job aborted, no legal \end found)
 
@@ -879,5 +884,5 @@ Here is how much of TeX's memory you used:
  3577 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 19i,8n,19p,206b,110s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,8n,19p,247b,110s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
