@@ -52,6 +52,19 @@ Let \(f_e\) be the external boundary cycle and \(F\) be the set of all boundary 
   \forall b \in F \backslash {f_e}:\sum_{v} x_{vf} +&\, \sum_{b\in F \backslash {f}} z_{fb} - z_{bf} =& 4
 \end{align}
 
+Boundary cycle \(a\) is the external boundary cycle so Equation 3 must hold.
+\[ \sum_{v} x_{v a} + \sum_{b\in B\setminus \{a\}} z_{a b} - z_{b a} \]
+\[=  3 + z_{ab} - z_{ba} + z_{ac} - z_{ca} + z_{ad} - z_{da} + z_{ae} - z_{ea} \]
+  \[=  3 + 0 - 2 + 0 - 1 + 0 - 0 + 0 - 4 \]
+  \[=  3 - 2 - 1 - 4 = -4\]
+%%
+Boundary cycle \(e\) is an internal boundary cycle so Equation 4 must hold.
+
+  \[ \sum_{v} x_{vf} + \sum_{b\in B\setminus f} z_{fb} - z_{bf} \]
+  \[= 2 + z_{ea} - z_{ae} + z_{eb} - z_{be} + z_{ec} - z_{ce} + z_{ed} - z_{de} \]
+ \[= 2 + 4 - 0 + 0 - 0 + 0 - 0 + 0 - 2 \]
+ \[= 2 + 4 - 2 = 4 \]
+
 \subsection{Exercise 2.3}
 Since G is a graph that contains only straight and horizontal edges, it is impossible for G to have more than 4 edges: a horizontal edge going left; a horizontal edge going right; a vertical edge going up; a vertical edge going down. To show that Equation 1 from the Assignment Document holds we will show that it is true for each of the 3 cases presented, ie \(v\) has degree \(\in [2,3,4]\).
 
