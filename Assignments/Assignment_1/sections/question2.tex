@@ -65,3 +65,101 @@ The objective function is given by \[min \sum_{\forall f \in G, f \neq g} z_{fg}
     4 & \text{if \(v\) has degree \(4\)}
   \end{cases}
 \end{align}
+
+\subsection{Exercise 2.5}
+The transformation from a rectilinear graph to a MCFP is given by the following conditions:
+\begin{quote}
+  \begin{itemize}
+    \item{} \((v,f)\) where vertex v lies on the boundary of face \(f\) in \(G\). The capacity of these
+        edges is lower bounded by 1 and upper bounded by 4. They have zero cost.
+    \item{} \((f,g)\) and \((g,f)\) for every pair of adjacent faces, \(f\) and \(g\) in \(G\). The capacity of these edges is lower bounded by 0 and upper bounded by infinity. They have unit cost.
+  \end{itemize}
+  \flushright{\citep{drawings}}
+\end{quote}
+
+Given the above our graph solution to this question is based on the assumption that two faces \(f\) and \(g\) are adjecent if they share a vertex \(v\). This assumption yields the following sets of connected vertices:
+
+\begin{align}
+  &a:& {v_1, v_4, v_5, b, c, d, f, g h}\\
+  &b:& {v_1, v_2, v_5, a, c, d, e, h}\\
+  &c:& {v_2, v_3, v_5, a, b, d, e, h}\\
+  &d:& {v_1, v_2, v_6, a, b, c, e, g, f}\\
+  &e:& {v_2, v_3, v_6, b, c, d, f, g, h}\\
+  &f:& {v_1, v_4, v_6, a, d, e, g, h}\\
+  &g:& {v_3, v_4, v_6, a, d, e, f, h}\\
+  &h:& {v_3, v_4, v_5, a, b, c, e, f, h}
+\end{align}
+
+% \begin{tikzpicture}
+%   [scale=0.8,auto=left]
+%   \tikzstyle{every node}=[shape=circle,fill=white,draw=black,text=black]
+%   % Faces
+%   \node (fa) at (1,10) {a};
+%   \node (fb) at (4,8) {b};
+%   \node (fc) at (5,2) {c};
+%   \node (fd) at (5,6) {d};
+%   \node (fe) at (3,4) {e};
+%   \node (ff) at (9,1) {f};
+%   \node (fg) at (7,10) {g};
+%   \node (fh) at (8,10) {h};
+%
+%   % Vertices
+%   \node (v1) at (1,1) {\(v_1\)};
+%   \node (v2) at (3,2) {\(v_2\)};
+%   \node (v3) at (5,3) {\(v_3\)};
+%   \node (v4) at (7,4) {\(v_4\)};
+%   \node (v5) at (9,5) {\(v_5\)};
+%   \node (v6) at (1,6) {\(v_6\)};
+%
+%   % Connections from a
+%   \foreach \from/\to in {fa/fb,fa/fh,fa/ff,fa/fc,fa/fg,fa/fd}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v1/fa,v5/fa,v4/fa}
+%     \draw (\from) -- (\to);
+%   
+%   % Connections from b
+%   \foreach \from/\to in {fb/fd,fb/fc,fb/fe,fb/fh}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v1/fb,v2/fb,v5/fb}
+%     \draw (\from) -- (\to);
+%   
+%   % connections from c
+%   \foreach \from/\to in {fc/fd,fc/fe,fc/fh}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v2/fc,v3/fc,v5/fc}
+%     \draw (\from) -- (\to);
+%
+%   % Connections from d
+%   \foreach \from/\to in {fd/fe,fd/fg,fd/ff}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v1/fd,v2/fd,v6/fd}
+%     \draw (\from) -- (\to);
+%
+%   % Connections from e
+%   \foreach \from/\to in {fe/ff,fe/fg,fe/fh}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v2/fe,v3/fe,v6/fe}
+%     \draw (\from) -- (\to);
+%
+%   % Connections from f
+%   \foreach \from/\to in {ff/fg,ff/fh}
+%     \draw (\from) -- (\to);
+%   \foreach \from/\to in {v1/ff,v4/ff,v6/ff}
+%     \draw (\from) -- (\to);
+%
+%   % Connetions from g
+%   \foreach \from/\to in {fg/fh}
+%     \draw (\from) -- (\to);
+%
+%   \foreach \from/\to in {v3/fg,v4/fg,v6/fg}
+%     \draw (\from) -- (\to);
+%
+%   % Connections from h
+%   \foreach \from/\to in {v3/fh,v4/fh,v5/fh}
+%     \draw (\from) -- (\to);
+% \end{tikzpicture}
