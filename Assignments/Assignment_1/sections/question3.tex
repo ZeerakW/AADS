@@ -1,10 +1,9 @@
 \section{Exercise 3}
 \subsection{Exercise 3.1}
 
-We start here with \(I_0\), where there is the constraint \[ l_e \le x_e \le u_e, \forall e \in E \].
-\( l_e \in \mathbb{R} \union -\infty\),  \( u_e \in \mathbb{R} \union +\infty\) 
+We start here with \(I_0\), where there is the constraint \[ l_e \le x_e \le u_e, \forall e \in E, l_e \in \mathbb{R} \cup -\infty,  u_e \in \mathbb{R} \cup + \infty \]
 
-If we take an edge \(e\) from \(u\) to \(v\),then  if \(x_e <\) 0  we can say that flow is going in the other direction, i.e. along \((v,u)\). As a flow is defined in a graph that does not have anti-parallel edges we cannot image flow going in both directions, and then we introduce a new vertex, say \(w\). To ensure we are not altering the possible max-flow of the network, we say that b_{w} has value 0 and the cost from \((u,w)->(w,v)\) will have the same cost as the edge \((u,v)\). Now one of 3 possibilities exists.\newline
+If we take an edge \(e\) from \(u\) to \(v\),then  if \(x_e <\) 0  we can say that flow is going in the other direction, i.e. along \((v,u)\). As a flow is defined in a graph that does not have anti-parallel edges we cannot have flow going in both directions, and therefore we introduce a new vertex, \(w\). To ensure we are not altering the possible max-flow of the network, we say that \(b_{w}\) has value 0 and the cost from \((u,w)->(w,v)\) will have the same cost as the edge \((u,v)\). Now one of 3 possibilities exists.\newline
 First, the flow with value \(u_e\) cancels out the flow from \(l_e\) and \(l_e\) becomes zero.
 Second, the flow with value \(l_e\) cancels out the flow from \(u_e\) and \(u_e\) becomes zero.
 Finally, the forward flow and backward flow cancel each other out and then both become zero.
@@ -12,10 +11,9 @@ Finally, the forward flow and backward flow cancel each other out and then both 
 Doing this we ensure that there is at least one of \(l_e\) or \(u_e\) bounded and finite.
 
 
-
 \subsection{Exercise 3.3}
 We start here with \(I_2\), where there is the constraint \[ l_e \le x_e \le u_e, \forall e \in E \].
-\( l_e \in \R) and finite. \( u_e \in \R \union +\infty\) . 
+\( l_e \in \mathbb{R}\) and finite. \( u_e \in \mathbb{R} \cup +\infty\) . 
 
 Now we have two situations. Either \(l_e<0\) or \(l_e > 0\).
 If \(l_e<0\): Then we can modify the the flow \(f\) in the original problem.
