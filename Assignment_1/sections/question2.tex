@@ -46,6 +46,22 @@ We are asked to draw a rectilinear layout of graph 2(a) from the assignment desc
 \end{figure}
 
 \subsection{Exercise 2.2}
-Let \(f_e\) be the external boundary cycle and \(B\) be the set of all boundary cycles. Given two boundary cycles \(x\) and \(y\), inner turns (from \(x\) to \(y\)) are denoted by \(z_{xy}\) and outer turns (from \(y\) to \(x\)) are denoted by \(z{yx}\).
+Let \(f_e\) be the external boundary cycle and \(F\) be the set of all boundary cycles. Given two boundary cycles \(x\) and \(y\), inner turns (from \(x\) to \(y\)) are denoted by \(z_{xy}\) and outer turns (from \(y\) to \(x\)) are denoted by \(z{yx}\).
 \begin{align}
+  \sum_{v} x_{vf_{e}} +&\, \sum_{b\in F \backslash {f_e}} z_{f_{e}b} - z_{bf_{e}} = -4\\
+  \forall b \in F \backslash {f_e}:\sum_{v} x_{vf} +&\, \sum_{b\in F \backslash {f}} z_{fb} - z_{bf} = 4
 \end{align}
+
+\subsection{Exercise 2.4}
+The objective function is given by \[min \sum_{\forall f \in G, f \neq g} z_{fg}\] given that the aim is to minimise the number of break points. The constraints that the problem is subjected to are:
+\begin{align}
+  &\sum_{v} x_{vf_{e}} + \sum_{b\in F \backslash {f_e}} z_{f_{e}b} - z_{bf_{e}}& =& -4\\
+  &\forall b \in F \backslash {f_e}:\sum_{v} x_{vf} + \sum_{b\in F\backslash {f}} z_{fb} - z_{bf}& =& 4\\
+  & \sum_f x_{vf} & =&
+  \begin{cases}  
+    0 & \text{if \(v\) has degree \(2\)}\\
+    2 & \text{if \(v\) has degree \(3\)}\\
+    4 & \text{if \(v\) has degree \(4\)}
+  \end{cases}
+\end{align}
+
