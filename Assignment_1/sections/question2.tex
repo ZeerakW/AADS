@@ -55,6 +55,7 @@ Let \(f_e\) be the external boundary cycle and \(F\) be the set of all boundary 
 \subsection{Exercise 2.4}
 The objective function is given by \[min \sum_{\forall f \in G, f \neq g} z_{fg}\] given that the aim is to minimise the number of break points. The constraints that the problem is subjected to are:
 \begin{align}
+  &z_{fg}, z_{gf}& \geq& 0\\
   &\sum_{v} x_{vf_{e}} + \sum_{b\in F \backslash {f_e}} z_{f_{e}b} - z_{bf_{e}}& =& -4\\
   &\forall b \in F \backslash {f_e}:\sum_{v} x_{vf} + \sum_{b\in F\backslash {f}} z_{fb} - z_{bf}& =& 4\\
   & \sum_f x_{vf} & =&
