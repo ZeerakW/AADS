@@ -94,8 +94,7 @@ The objective function is given by \[min \sum_{\forall f \in G, f \neq g} z_{fg}
 \end{align}
 
 \subsection{Exercise 2.5}
-Given a rectilinear graph \(G = (V,E)\) and a MCFP \(G' = (V',E')\). V'  is the set of vertices which contains all vertices \(v \in G\), and also a vertex for every face in \(G\).  \(E'\) is the set of edges which contains edges \((f,g)\) for f,g faces in \(G\) , if f and g share a vertex, and edges \((v,f)\) for \(v \in V\) if v was a vertex in f. As we are dealing with turns and breakpoints, and these are relative to faces and vertices and faces and faces, there is no information stored on connections from vertices to vertices in \(G\) and therefore these connections are not present in \(G'\). The \(z_{fg}\) variables.
-
+Given a rectilinear graph \(G = (V,E)\) and a MCFP \(G' = (V',E')\). V'  is the set of vertices which contains all vertices \(v \in G\), and also a vertex for every face in \(G\).  \(E'\) is the set of edges which contains edges \((f,g)\) for f,g faces in \(G\) , if f and g share a vertex, and edges \((v,f)\) for \(v \in V\) if v was a vertex in f. As we are dealing with turns and breakpoints, and these are relative to faces and vertices and faces and faces, there is no information stored on connections from vertices to vertices in \(G\) and therefore these connections are not present in \(G'\). 
 The transformation from a rectilinear graph to a MCFP is given by the following conditions:
 \begin{quote}
   \begin{itemize}
@@ -109,16 +108,17 @@ The transformation from a rectilinear graph to a MCFP is given by the following 
 Given the above our graph solution to this question is based on the assumption that two faces \(f\) and \(g\) are adjecent if they share a vertex \(v\). This assumption yields the following sets of connected vertices:
 
 \begin{align}
-  &a:& {v_1, v_4, v_5, b, c, d, f, g h}\\
-  &b:& {v_1, v_2, v_5, a, c, d, e, h}\\
-  &c:& {v_2, v_3, v_5, a, b, d, e, h}\\
-  &d:& {v_1, v_2, v_6, a, b, c, e, g, f}\\
-  &e:& {v_2, v_3, v_6, b, c, d, f, g, h}\\
-  &f:& {v_1, v_4, v_6, a, d, e, g, h}\\
-  &g:& {v_3, v_4, v_6, a, d, e, f, h}\\
-  &h:& {v_3, v_4, v_5, a, b, c, e, f, h}
+  &a:& {v_1, v_4, v_5, b, f, h}\\
+  &b:& {v_1, v_2, v_5, a,c, d, e}\\
+  &c:& {v_2, v_3, v_5, b, e, h}\\
+  &d:& {v_1, v_2, v_6, b,e, f}\\
+  &e:& {v_2, v_3, v_6, c, d, g}\\
+  &f:& {v_1, v_4, v_6, a, d, g}\\
+  &g:& {v_3, v_4, v_6, e, f, h}\\
+  &h:& {v_3, v_4, v_5,a, c,g}
 \end{align}
 
+All vertices \(v\) are sources and produce 4 units of flow. Face nodes are sink nodes
 % \begin{tikzpicture}
 %   [scale=0.8,auto=left]
 %   \tikzstyle{every node}=[shape=circle,fill=white,draw=black,text=black]
