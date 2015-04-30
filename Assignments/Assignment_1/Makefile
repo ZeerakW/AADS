@@ -1,6 +1,10 @@
 # Filename without extension
 filename = main
 
+pdf-clean:
+	make pdf
+	make clean
+
 pdf:
 	pdflatex --shell-escape ${filename}
 	bibtex ${filename}||true 
