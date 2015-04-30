@@ -117,8 +117,8 @@ Given the above our graph solution to this question is based on the assumption t
   &g:& {v_3, v_4, v_6, e, f, h}\\
   &h:& {v_3, v_4, v_5,a, c,g}
 \end{align}
-
-All vertices \(v\) are sources and produce 4 units of flow. Face nodes are sink nodes
+The demands of vertices are calculated from the constraints as described before.
+All vertices \(v_i\) are sources and produce 4 units of flow,i.e demand of -4. Face nodes are sink nodes and have demand 4, except external face nodes which have demand -4. Edges \(e_{f,g}\) have unit cost and infinite capacity. Edges \(e_{f,v}\) have unit capacity and zero cost.
 % \begin{tikzpicture}
 %   [scale=0.8,auto=left]
 %   \tikzstyle{every node}=[shape=circle,fill=white,draw=black,text=black]
