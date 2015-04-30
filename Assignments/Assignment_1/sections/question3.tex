@@ -2,7 +2,7 @@
 \subsection{Exercise 3.1}
 
 We start here with \(I_0\), where there is the constraint \[ l_e \le x_e \le u_e, \forall e \in E \].
-\( l_e \in \R \union -\infty\),  \( u_e \in \R \union +\infty\) 
+\( l_e \in \mathbb{R} \union -\infty\),  \( u_e \in \mathbb{R} \union +\infty\) 
 
 If we take an edge \(e\) from \(u\) to \(v\),then  if \(x_e <\) 0  we can say that flow is going in the other direction, i.e. along \((v,u)\). As a flow is defined in a graph that does not have anti-parallel edges we cannot image flow going in both directions, and then we introduce a new vertex, say \(w\). To ensure we are not altering the possible max-flow of the network, we say that b_{w} has value 0 and the cost from \((u,w)->(w,v)\) will have the same cost as the edge \((u,v)\). Now one of 3 possibilities exists.\newline
 First, the flow with value \(u_e\) cancels out the flow from \(l_e\) and \(l_e\) becomes zero.
