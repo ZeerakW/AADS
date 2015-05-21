@@ -7,21 +7,21 @@ We are asked to show that \(E\left[ | C \cap S_h^k(A)| / k\right]  = |C|/|A|\).
 We are told that \(S_h^k(A)\) is a uniformly random subset of A and C is a subset of A which is independent from \(S_h^k(A)\), knowing these we can say 
 
 \begin{align}
-Pr\left[x \in S_h^k(A)\right] = p = \frac{k}{|A|} & \label{fact:prob_shk}\\
-Pr\left[x \in C \right] = Pr(C) = \frac{|C|}{|A|} & \label{fact:prob_C}
+&Pr\left[x \in S_h^k(A)\right] = p = \frac{k}{|A|}  \label{fact:prob_shk}\\
+&Pr\left[x \in C \right] = Pr(C) = \frac{|C|}{|A|}  \label{fact:prob_C}
 \end{align}
+
+
 \begin{align*}
-  & {E}\left[ | C \cap S_h^k(A) |/k\right] & \\
+  & {E}\left[ | C \cap S_h^k(A) | / k \right] & \\
   &= \frac{1}{k} \cdot {E}\left[ | C \cap S_h^k(A) |\right] & \\
   &= \frac{1}{k} \sum_{a\in A} {E}\left[ a \in C \land a \in S_h^k(A) \right] & \\
   &= \frac{1}{k}\sum_{a\in A} Pr\left[ a \in C \land a \in S_h^k(A) \right] & \\
   &= \frac{1}{k}\sum_{a\in A} \left( Pr\left[ a \in C \right] \cdot Pr\left[ a \in S_h^k(A) \right] \right) & \quad \text{Independence} \\
- &= \frac{1}{k} \cdot \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) 
-    &  \quad \text{From \ref{fact:prob_shk} and \ref{fact:prob_C} \\
-  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot \sum_{a\in A} 1
-    & \quad \text{Elements in summation independent of a \in A} \\
+  &= \frac{1}{k} \cdot \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) &  \quad \text{From \eqref{fact:prob_shk} and \eqref{fact:prob_C}} \\
+  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot \sum_{a\in A} 1& \quad \text{Elements in summation independent of $a \in A$} \\
   &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot k & \\
-  &= \frac{|C|}{|A|} & \\
+  &= \frac{|C|}{|A|}
 \end{align*}
 
 \subsubsection{Exercise 3}
