@@ -1,0 +1,146 @@
+\section{Bottom-$k$ sampling}
+
+\subsection{Exercise 2}
+We assume that $C$ and $S_h^k(A)$ are independently drawn, and that $S_h^k(A)$ is a uniformly
+random subset of $A$ of size $k$. We know that the probability of an element in $A$ being
+in the bottom-$k$ sample $S_h^k(A)$ is $p=k/n$.
+
+The probability that a randomly drawn element from $A$ is also in the subset $C$
+must be $|C|/|A|$. Intuitively, as $C$ grows in size, so does the probability of picking
+an element from $A$ that is also in $C$.
+
+Then we have that
+\begin{align}
+  & \mathbb{E} \left[ | C \cap S_h^k(A) | \right] \notag \\
+  &= \sum_{a\in A} \mathbb{E}\left[ a \in C \land a \in S_h^k(A) \right] \notag \\
+  &= \sum_{a\in A} Pr\left[ a \in C \land a \in S_h^k(A) | \right] \notag \\
+  &= \sum_{a\in A} \left( Pr\left[ a \in C \right] \cdot Pr\left[ a \in S_h^k(A) \right] \right) 
+    \label{eq:2:independent} \\
+  &= \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) \label{eq:2:final}
+\end{align}
+where \eqref{eq:2:independent} because the probability of the events is independent, and \eqref{eq:2:final} makes use of \eqref{eq:2:sizeOfC} as well as the probability for an element of
+$A$ being in $S_h^k(A)$.
+
+Finally we have that:
+\begin{align*}
+  & \mathbb{E}\left[ \frac{| C \cap S_h^k(A) |}{k}\right] & \\
+  &= \frac{1}{k} \cdot \mathbb{E}\left[ | C \cap S_h^k(A) |\right] & \\
+  &= \frac{1}{k} \cdot \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) 
+    & \quad \text{See \eqref{eq:2:final}} \\
+  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot \sum_{a\in A} 1
+    & \quad \text{Components of sum do not depend on $a\in A$} \\
+  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot |A| & \\
+  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot k & \\
+%  &= 1 \cdot \frac{|C|}{|A|} \\
+  &= \frac{|C|}{|A|}
+\end{align*}
+
+\subsection{Exercise 3(a)}
+\label{sec:ex3a}
+We would store the data in a max-heap structure $H$ where we only store the $k$
+smallest keys. Since we only want to store a key if it is smaller than the
+biggest element in the heap, and the biggest element is on the top of the heap,
+we can do this check in $O(1)$ time. And furthermore insert elements in
+$O(\text{lg }k)$ time.
+
+% We would store the buttom-$k$ samples in a minimum heap structure $H$, sorted by
+% their hashing value. This way we can insert new entries in $O(\text{lg } n)$,
+% and retrieve the $S^{k}_{h}(H)$ lowest hash values in $O(k \text{ lg } n)$ where
+% $n$ is the total number of input values.
+
+\subsection{Exercise 3(b)}
+As written above we would be able to process/insert the next key in $O(\text{lg
+} n)$ time.
+
+\subsection{Exercise 4(a)}
+We will prove the equality $S^{k}_{h}(\text{A} \cup \text{B}) =
+S^{k}_{h}(S^{k}_{h}(A) \cup S^{k}_{h}(B))$.
+%
+We can see each set as a sorted stack that keeps the smallest values at the
+top. The left hand part of the equality ($S^{k}_{h}(\text{A} \cup \text{B}))$)
+corresponds to merging the two stacks and taking the $k$ top values.
+%
+The right hand side ($S^{k}_{h}(S^{k}_{h}(A) \cup S^{k}_{h}(B))$) corresponds to
+taking the $k$ topmost values from both stacks and then merging them and taking
+the $k$ smallest values from the resulting stack.
+
+Since we take the $k$ smallest values from each stack we are guaranteed to have
+the smallest value from the union of $A$ and $B$ since even if the smallest
+values in $B$ is bigger than the biggest values in $A$ we still have the $k$
+smallest values from $A$, thus proving the equality.
+%\todo[inline]{Someone should formalize this a bit, XOXO Martin}
+
+\subsection{Exercise 4(b)}
+% Left side of the equality is basically taking the k smallest values from the
+% union and only keeping those that appear in both sets.
+
+% Right side of the equality is basically taking the k smallest values from the
+% union and only keeping those that are part of the k-smallest in both sets.
+
+We want to prove the equality $A \cap B \cap S^{k}_{h}(A \cup B) = S^{k}_{h}(A)
+\cap S^{k}_{h}(B) \cap S^{k}_{h}(A \cup B)$.
+
+The lefthandside corresponds to taking the $k$ smallest keys in the union of
+$A$ and $B$ and then eliminating all entries that is not also in both $A$ and
+$B$.
+%
+The righthandside is the same as taking the $k$ smallest keys in the union of
+$A$ and $B$ and then eliminating all the entries that is not part of the $k$
+smallest keys in both $A$ and $B$.
+
+Since $S^{k}_{h}(A \cup B)$ naturally limits both sides of the equality to only
+the $k$ smallest entries in the union, $A \cap B$ gets limited by the intersect
+with $S^{k}_{h}(A \cup B)$.
+%\todo[inline]{Someone should formalize this a bit, XOXO Martin}
+
+%We see trivially that $S^{k}_{h}(A) = S^{k}_{h}(A)$. We also easily see that
+%$S^{k}_{h}(A) \cap S^{k}_{h}(B) \subseteq A \cap B$
+
+\subsection{Exercise 4(c)}
+%\todo[inline]{Error check me, plox! XOXO Martin}
+We can divide
+\[
+|S^{k}_{h}(A) \cap S^{k}_{h}(B) \cap S^{k}_{h}(S^{k}_{h}(A) \cup S^{k}_{h}(B))|
+/ k
+\]
+%
+into several smaller pieces in order to estimate it's running time, on psudo BNF
+it will be
+\begin{align*}
+  full  &= |sets| / k \\
+  sets  &= S^{k}_{h}(A) \cap S^{k}_{h}(B) \cap ext \\
+  ext   &= S^{k}_{h}(union) \\
+  union &= S^{k}_{h}(A) \cup S^{k}_{h}(B)
+\end{align*}
+With these smaller fragments it will be easier to calculate the runningtime and
+see where the different time consumers are. We will start from the bottom and
+move up
+\begin{itemize}
+\item[$union$] Assuming we're using our minimum-heap structure proposed in
+  \ref{sec:ex3a} $S^{k}_{h}(A)$ and $S^{k}_{h}(B)$ can both be done in $O(k
+  \text{ lg } n)$. The union can be done in $\Theta(2k)$. Giving this part a
+  running time of $O(k \text{ lg } n)) + \Theta(k)$.
+%
+\item[$ext$] The output from $union$ now contains $2k$ elements meaning we can
+  get the $k$ smallest in $O(k \text{ lg } 2k))$ time.
+%
+\item[$sets$] Each of the extractions in this part can be done in $O(k \text{ lg
+  } n)$ time, and since the heaps are ordered the intersect requires only linear
+  time giving running time of $O(k \text{ lg } n) + O(k)$. The intersect with
+  the $ext$ part requires linear runningtime in the number of elements in the
+  largest heap, since both are of maximum size $k$, the final time is $O(k
+  \text{ lg } n)) + O(k) + O(k)$.
+%
+\item[$full$] Since the number of entries in the heap can be decided in $O(1)$
+  time if we assume the heap has an associated peorperty with the number of
+  nodes that are updated in all operations (also done in constant time), and the
+  division itself is also in constant time. This means we just need to determine
+  the runningtime of all the above segments combined.
+\begin{align*}
+  union &= O(k \text{ lg } n)) + \Theta(k) \\
+  ext   &= O(k \text{ lg } 2k)) \\
+  sets  &= O(k \text{ lg } n)) + O(k) + O(k) \\
+  full  &= O(1) + O(k \text{ lg } n)) + O(k) + O(k) + O(k \text{ lg } 2k)) + O(k \text{ lg } n)) + \Theta(k) \\
+        &= O(k \text{ lg } n))
+\end{align*}
+\end{itemize}
