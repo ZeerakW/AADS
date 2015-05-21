@@ -1,3 +1,25 @@
 \section{Hash functions for sampling}
 \subsection{Exercise 1}
+\subsubsection{(a)}
+
+We are asked to prove \(p \leq Pr[h_m(x)/m < p] \leq 1.01p\).
+We will use various facts to show this. Firstly that \(h(x) = h_m(x)/m\) is a Strong Universal Hash Function, secondly as we are give \(p \ge 100/m \) this implies that \(p/100\ge 1/m\), thirdly \(h_m(x)/m \le p \) implies \(h_m(x) \le mp  \)  and finally we will use that for any \(y\),   \(y \leq \lceil y \rceil < y+1\).
+
+We observe that
+\begin{align*}
+	& Pr[h_m(x)/m < p] \\
+	&= \sum_{0 \leq k < mp} Pr[h_m(x) = k] \\
+	&= \sum_{0 \leq k < mp} \frac{1}{m} \\
+	&= \frac{1}{m} \sum_{0 \leq k < mp} 1 \\
+	&= \frac{1}{m} \left| [0,mp) \right| \\
+	&= \frac{1}{m} \cdot \lceil mp \rceil \\
+	&= \frac{\lceil mp \rceil}{m}
+\end{align*}
+
+Thus we conclude
+\begin{align*}
+	p 	&= \frac{pm}{m} \leq Pr[h_m(x)/m < p] = \frac{\lceil pm \rceil}{m} \leq \frac{pm+1}{m} 
+		\leq p + \frac{p}{100} = 1.01p
+\end{align*}
+
 
