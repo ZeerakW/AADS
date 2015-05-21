@@ -3,7 +3,7 @@
 \subsubsection{(a)}
 
 We are asked to prove \(p \leq Pr[h_m(x)/m < p] \leq 1.01p\).
-We will use various facts to show this. Firstly that \(h(x) = h_m(x)/m\) is a Strong Universal Hash Function, secondly as we are give \(p \ge 100/m \) this implies that \(p/100\ge 1/m\), thirdly \(h_m(x)/m \le p \) implies \(h_m(x) \le mp  \)  and finally we will use that for any \(y\),   \(y \leq \lceil y \rceil < y+1\).
+We will use various facts to show this. Firstly that \(h(x) = h_m(x)/m\) is a Strong Universal Hash Function, secondly as we are give \(p \ge 100/m \) this implies that \(p/100\ge 1/m\), thirdly \(h_m(x)/m \le p \) implies \(h_m(x) \le mp  \)  and finally we will use that for any \(y\), \(y \leq \lceil y \rceil < y+1\).
 
 We observe that
 \begin{align*}
@@ -22,4 +22,17 @@ Thus we conclude
 		\leq p + \frac{p}{100} = 1.01p
 \end{align*}
 
+\subsubsection{(b)}
+We are asked to bound the probability that two keys share the same hash value \(\dfrac{h_m(x)}{m}=\dfrac{h_m(y)}{m}\), given that \(A\subset U, m \geq 100|A|^2\).\\
+To prove this we use that \(\dfrac{\binom{n}{2}}{2} = \dfrac{\dfrac{n(n-1)}{2}}{m} = \dfrac{n(n-1)}{2m}\)
+The probability can be written as
+\begin{align*}
+  Pr[\exists \{x,y\}\in &A: \dfrac{h_m(x)}{m} = \dfrac{h_m(x)}{m}]\\
+  &\leq\sum_{\{x,y\}\in A} Pr\left [\dfrac{h_m(x)}{m} = \dfrac{h_m(x)}{m}\right ]\\
+  &=\dfrac{\binom{|A|}{2}}{m}\\
+  &\leq\dfrac{|A|(|A| - 1)}{2m}\\
+  &\leq\dfrac{|A|(|A| - 1)}{2\cdot 100|A|^2}\\
+  &\leq\dfrac{|A|(|A| - 1)}{200|A|^2}
+\end{align*}
 
+Thus the bound for two keys sharing the same hash value is \[\leq\dfrac{1}{200}\]
