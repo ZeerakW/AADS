@@ -15,13 +15,13 @@ Pr\left[x \in C \right] = Pr(C) = \frac{|C|}{|A|} & \label{fact:prob_C}
   &= \frac{1}{k} \cdot {E}\left[ | C \cap S_h^k(A) |\right] & \\
   &= \frac{1}{k} \sum_{a\in A} {E}\left[ a \in C \land a \in S_h^k(A) \right] & \\
   &= \frac{1}{k}\sum_{a\in A} Pr\left[ a \in C \land a \in S_h^k(A) \right] & \\
-  &= \frac{1}{k}\sum_{a\in A} \left( Pr\left[ a \in C \right] \cdot Pr\left[ a \in S_h^k(A) \right] \right) & \quad \text{Independence} \\
- &= \frac{1}{k} \cdot \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) 
-    &  \quad \text{From \ref{fact:prob_shk} and \ref{fact:prob_C} \\
-  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot \sum_{a\in A} 1
-    & \quad \text{Elements in summation independent of a \in A} \\
+  &= \frac{1}{k}\sum_{a\in A} \left( Pr\left[ a \in C \right] \cdot Pr\left[ a \in S_h^k(A) \right] \right) 
+  & \quad \text{Independence} \\
+  &= \frac{1}{k} \cdot \sum_{a\in A} \left( \frac{|C|}{|A|} \cdot \frac{k}{|A|} \right) & \quad \text{From \ref{fact:prob_shk} and \ref{fact:prob_C}} \\
+  &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot \frac{k}{|A|} \cdot \sum_{a\in A} 1 
+  & \quad \text{Elements in summation independent of \(a \in A\)} \\
   &= \frac{1}{k} \cdot \frac{|C|}{|A|} \cdot k & \\
-  &= \frac{|C|}{|A|} & \\
+  &= \frac{|C|}{|A|} & 
 \end{align*}
 
 \subsubsection{Exercise 3}
