@@ -27,10 +27,9 @@ We are told that \(S_h^k(A)\) is a uniformly random subset of A and C is a subse
 \end{align*}
 
 \subsubsection{Exercise 3 (a)}
-When implementing the hashes we would consider what the greater need is, whether the need is to store or retrieve. The reason this is relevant is that, if the primary need is to retrieve, then we would opt to use a binary tree given that the worst case search time is \(O\log_2(h)\) for a balanced tree, whereas it's \(O(h)\) for an unbalanced tree, where h is the height. For inserting the running time is the same as for searching, under the same conditions.\\
-If the primary interest is to insert and store we would instead use a linked list or a stack as insertion into those data structure is \(O(1)\).\\
+For this we would implement a maximum heap structure, where we only store the \(k\) smallest keys. This would allow for insertion time \(O(\log_2 k)\) as checking if the key is smaller than the largest key, would only take \(O(1)\).
 \subsubsection{Exercise 3 (b)}
-As mentioned, processing and inserting the key \(x_{i+1}\) would take at worst \(O(h)\) using binary trees, whereas it would take \(O(1)\) for both stacks and lists.
+As mentioned above, the insertion would take \(O(\log_2 k)\).
 \subsection{Similarity Estimation}
 \subsubsection{Exercise 4}
 We will use the definition of \(S_h^k \) to prove \(4(a)\) analytically. \(S_h^k(A) = \{\text{the } k \text{ keys } x \in A \text{ with the smallest hash values}\} \)
