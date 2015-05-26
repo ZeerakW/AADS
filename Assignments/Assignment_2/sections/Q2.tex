@@ -35,9 +35,9 @@ As mentioned above, the insertion would take \(O(\log_2 k)\).
 \subsubsection{Exercise 4 (a)}
 \begin{align*}
 &S_h^k(A \cup B) = S_h^k\big(S_h^k(A) \cup S_h^k(B)\big)
-\end{align}
+\end{align*}
 We will use the definition of \(S_h^k \) to prove this equality analytically. \(S_h^k(A) = \{\text{the } k \text{ keys } x \in A \text{ with the smallest hash values}\} \). Similarly for \(S_h^k(B)\). The LHS of the expression is the smallest k keys in all keys in \(A\) and \(B\) together. The RHS of the expression is the smallest k keys in the union of the smallest k keys in each of \(A\) and \(B\).  Imagine some possible scenarios:
-\begin{enumarate}
+\begin{enumerate}
 \item All the smallest keys came from only one set, say A, then both sides of the equations will return just these \(k\) smallest keys.  
 \item The k smallest keys in all of A and B come from both sets, the on the LHS we are are finding all the smallest keys from both these sets conjoined, and on the RHS we are first combining the smallest keys from both sets, resulting in \(2k\) keys and then picking the k smallest of these.
 \end{enumerate}
@@ -45,11 +45,20 @@ As these operations are taking only the smallest k keys from the sets we have eq
 \subsection{Exercise 4 (b)}
 \begin{align*}
 &A \cap B \cap S_h^k(A \cup B) = S_h^k(A) \cap S_h^k(B) \cap S_h^k(A \cup B)
-\end{align}
+\end{align*}
 Again, we will prove this equality analytically. Firstly the LHS of the expression. An element can only satisfy this expression if there is some element in the set of smallest keys in of the union of A and B which belongs to A, also belongs to B. An element can only satisfy this expression if there is some element in the set of smallest keys in of the union of A and B which belongs to the set of smallest keys in A, also belongs to the set of smallest keys in B. Both the LHS and RHS are limited by the elements in \( S_h^k(A \cup B)\), therefore we have equality.
 
-
-
-
-
-
+\subsubsection{Exercise 4 (c)}
+The running time for \(\dfrac{|S_{h}^k(A) \cap S_{h}^k(B) \cap S_h^k(S_h^k(A)\cup S_h^k(B))|}{k}\) when using a max-heap can be split into the following running times:
+\begin{itemize}
+  \item Union: \(S_h^k(A), S_h^k \text{run in } O(k\log_2 n)\text{ and the union in } \Theta(2k)\text{, thus: } O(k\log_2 n) + \Theta(k)\)
+  \item Intersections: Given ordered heaps, intersect only requires linear time \(O(k)\) and extractions can be performed in \(O(k \log_2 n)\) giving: \(O(k\log_2 n) + O(k)\) for each interesection. Since the intersect with \(S_h^k(S_h^k(A)\cup S_h^k(B))\) takes linear time on the largest heap and both have maximum size \(k\) we find that the time complexity is: \(O(k\log_2 n) + O(k) + O(k)\)
+  \item \(S_h^k (union)\): As we have \(2k\) elements we can extract in \(O(k\log_2 2k)\) time.
+  \item Finally we need to account for the fact that the number of entries can be accounted in \(O(1)\) time.
+\end{itemize}
+\begin{align*}
+  Union:& O(k\log_2 n) + \Theta(k).\\
+  Intersections:&  O(k\log_2 n) + O(k) + O(k)\\
+  S_h^k(union):& O(k\log_2 2k)\\
+  \text{Yielding}:& O(1) +  O(k \log_2 n)) +  O(k) + O(k) + O(k\log_2 2k) + O(k\log_2 k) + \Theta(k) = O(k\log_2 n)
+\end{align*}
